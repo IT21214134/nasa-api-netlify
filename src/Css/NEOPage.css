@@ -1,0 +1,92 @@
+/* .neo-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  } */
+  
+
+  .neo-page-header{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  form {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    margin-right: 10px;
+  }
+  
+  input[type="date"] {
+    margin-right: 10px;
+  }
+  
+  .search-button {
+    /* padding: 10px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer; */
+    background-color: #007bff;
+    display: inline-block;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: inherit;
+  }
+  
+  .error {
+    color: red;
+  }
+  
+  .neo-data {
+    margin-top: 20px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  h3 {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  
+  h4 {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  p {
+    margin-bottom: 5px;
+  }
+
+  .neo-accordion-item {
+    margin-bottom: 20px; /* Adjust margin between accordion items */
+  }
+  
+  .neo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust grid columns */
+    gap: 20px; /* Adjust gap between grid items */
+  }
+  
+  .neo-grid-item {
+    background-color: #f0f0f0; /* Background color of each grid item */
+    padding: 10px; /* Adjust padding of each grid item */
+    border-radius: 8px; /* Add border radius to each grid item */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow to each grid item */
+  }
+  
+  
+  
+  
+  

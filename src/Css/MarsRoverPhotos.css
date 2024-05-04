@@ -1,0 +1,115 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Changed height to min-height to allow the section to grow if needed */
+  padding: 20px; /* Added padding for better spacing */
+}
+
+.photos-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two grids per row */
+  grid-gap: 20px; /* Added gap between grids */
+  width: 100%; /* Ensure the grids take up the full width */
+  max-width: 1200px; /* Added max-width for better responsiveness */
+  margin-top: 20px; /* Added margin to separate from the header */
+}
+
+.photo {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.photo img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.photo:hover img {
+  transform: scale(1.1);
+}
+
+.photo-details {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.loading {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 50px;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(8, 8, 8, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-css {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: #b4b2b2;
+}
+
+.modal-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.camera-list {
+  list-style: none;
+  padding: 0;
+}
+
+.camera-item {
+  margin-bottom: 10px;
+}
+
+.camera-label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.camera-value {
+  color: #666;
+}
+
+.show-button{
+   padding: 10px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    background-color: #007bff;
+}
